@@ -1,0 +1,101 @@
+/* body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+} */
+
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+}
+
+/* center everything */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* main card */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 450px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* upload section */
+.upload-box {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+/* button */
+button {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* result section */
+.result h2 span {
+    color: #4CAF50;
+}
+
+.graph {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* music */
+.music-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.music-btn {
+    text-decoration: none;
+    background: #ff5722;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.music-btn:hover {
+    background: #e64a19;
+}

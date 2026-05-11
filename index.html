@@ -1,0 +1,68 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Speech Emotion Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>🎤 Speech Emotion Recognition</h1>
+
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="audio" required>
+    <button type="submit">Predict</button>
+</form>
+
+{% if emotion %}
+    <h2>🎯 Emotion: {{ emotion }}</h2>
+
+    <img src="{{ graph }}" width="400">
+
+    <h3>🎧 Recommended: {{ music }}</h3>
+    <a href="{{ url }}" target="_blank">Play Music</a>
+{% endif %}
+
+</body>
+</html> 
+-->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Speech Emotion Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="main">
+
+    <h1>🎤 Speech Emotion Recognition</h1>
+
+    <div class="card">
+
+        <form method="POST" enctype="multipart/form-data" class="upload-box">
+            <input type="file" name="audio" required>
+            <button type="submit">Predict Emotion</button>
+        </form>
+
+        {% if emotion %}
+        <div class="result">
+            <h2>🎯 Emotion: <span>{{ emotion }}</span></h2>
+
+            <img src="{{ graph }}" class="graph">
+
+            <p class="music-text">🎧 {{ music }}</p>
+            <a href="{{ url }}" target="_blank" class="music-btn">▶ Play Music</a>
+        </div>
+        {% endif %}
+
+    </div>
+
+</div>
+
+</body>
+</html>
